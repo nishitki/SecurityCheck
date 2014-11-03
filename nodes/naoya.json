@@ -1,0 +1,13 @@
+{
+	"httpd": {
+		"port": 80
+	},
+  "run_list": [
+	"recipe[base_packages]",
+  	"recipe[httpd]",
+	"recipe[iptables]"
+  ],
+  "automatic": {
+    "ipaddress": "naoya"
+  }
+}
