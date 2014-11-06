@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="User &quot;naoya&quot;" tests="4" time="0.06108" failures="4" errors="0" skipped="0" timestamp="2014-11-06T13:37:41+09:00">
-  <testcase name="User &quot;naoya&quot; should exist" time="0.013965">
-    <failure type="RSpec::Expectations::ExpectationNotMetError" message="expected User &quot;naoya&quot; to exist">
-expected User "naoya" to exist (RSpec::Expectations::ExpectationNotMetError)
-expected User "naoya" to exist
-./spec/default/user_spec.rb:4:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
+<testsuite name="User &quot;naoya&quot;" tests="4" time="0.067998" failures="0" errors="0" skipped="0" timestamp="2014-11-06T14:16:45+09:00">
+  <testcase name="User &quot;naoya&quot; should exist" time="0.01744">
   </testcase>
-  <testcase name="User &quot;naoya&quot; should belong to group &quot;naoya&quot;" time="0.014777">
-    <failure type="RSpec::Expectations::ExpectationNotMetError" message="expected User &quot;naoya&quot; to belong to group &quot;naoya&quot;">
-expected User "naoya" to belong to group "naoya" (RSpec::Expectations::ExpectationNotMetError)
-expected User "naoya" to belong to group "naoya"
-./spec/default/user_spec.rb:5:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
+  <testcase name="User &quot;naoya&quot; should belong to group &quot;naoya&quot;" time="0.017314">
   </testcase>
-  <testcase name="User &quot;naoya&quot; should have home directory &quot;/home/naoya&quot;" time="0.015862">
-    <failure type="RSpec::Expectations::ExpectationNotMetError" message="expected #has_home_directory?(&quot;/home/naoya&quot;) to return true, got false">
-expected #has_home_directory?("/home/naoya") to return true, got false (RSpec::Expectations::ExpectationNotMetError)
-expected #has_home_directory?("/home/naoya") to return true, got false
-./spec/default/user_spec.rb:6:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
+  <testcase name="User &quot;naoya&quot; should have home directory &quot;/home/naoya&quot;" time="0.018273">
   </testcase>
-  <testcase name="User &quot;naoya&quot; should have login shell &quot;/bin/bash&quot;" time="0.016017">
-    <failure type="RSpec::Expectations::ExpectationNotMetError" message="expected #has_login_shell?(&quot;/bin/bash&quot;) to return true, got false">
-expected #has_login_shell?("/bin/bash") to return true, got false (RSpec::Expectations::ExpectationNotMetError)
-expected #has_login_shell?("/bin/bash") to return true, got false
-./spec/default/user_spec.rb:7:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
+  <testcase name="User &quot;naoya&quot; should have login shell &quot;/bin/bash&quot;" time="0.014548">
   </testcase>
 </testsuite>

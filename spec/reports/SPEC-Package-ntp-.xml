@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Package &quot;ntp&quot;" tests="1" time="0.02084" failures="0" errors="0" skipped="0" timestamp="2014-11-06T13:37:41+09:00">
-  <testcase name="Package &quot;ntp&quot; should be installed" time="0.020661">
+<testsuite name="Package &quot;ntp&quot;" tests="1" time="0.030032" failures="0" errors="0" skipped="0" timestamp="2014-11-06T14:16:45+09:00">
+  <testcase name="Package &quot;ntp&quot; should be installed" time="0.029864">
   </testcase>
 </testsuite>

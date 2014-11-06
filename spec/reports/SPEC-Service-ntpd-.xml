@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Service &quot;ntpd&quot;" tests="2" time="0.060245" failures="1" errors="0" skipped="0" timestamp="2014-11-06T13:37:41+09:00">
-  <testcase name="Service &quot;ntpd&quot; should be enabled" time="0.015689">
+<testsuite name="Service &quot;ntpd&quot;" tests="2" time="0.040766" failures="0" errors="0" skipped="0" timestamp="2014-11-06T14:16:45+09:00">
+  <testcase name="Service &quot;ntpd&quot; should be enabled" time="0.015086">
   </testcase>
-  <testcase name="Service &quot;ntpd&quot; should be running" time="0.044326">
-    <failure type="RSpec::Expectations::ExpectationNotMetError" message="expected Service &quot;ntpd&quot; to be running">
-expected Service "ntpd" to be running (RSpec::Expectations::ExpectationNotMetError)
-expected Service "ntpd" to be running
-./spec/default/ntp_spec.rb:13:in `block (2 levels) in &lt;top (required)&gt;'    </failure>
+  <testcase name="Service &quot;ntpd&quot; should be running" time="0.025428">
   </testcase>
 </testsuite>
