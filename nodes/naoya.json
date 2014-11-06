@@ -2,7 +2,8 @@
   "run_list": [
   "recipe[yum-epel]",
 "recipe[nginx]",
-"recipe[ntp]"
+"recipe[ntp]",
+"recipe[user]"
   ],
   "automatic": {
     "ipaddress": "naoya"
