@@ -1,0 +1,14 @@
+/Users/nishiki/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+checking for re.h... no
+checking for ruby/st.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling parser.c
+linking shared-object json/ext/parser.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 parser.bundle ./.gem.20141106-82070-15cpmxp/json/ext
+installing default parser libraries

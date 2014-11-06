@@ -1,0 +1,48 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+COOKBOOK_PATH = ['./cookbooks', './vendor/cookbooks']
+
+INTERNAL_ADDRESSES = {
+  'proxy' => '172.16.44.10',
+  'app' => '172.16.44.11',
+}
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  if ENV['CI']
+    config.vm.box = "hashicorp/precise32"
+  else
+    config.vm.box = "hashicorp/precise64"
+  end
+
+  if ENV['CI']
+    config.vm.provider "virtualbox" do |v|
+      v.customize ["modifyvm", :id, "--memory", "256"]
+    end
+  end
+
+  config.vm.define :proxy do |c|
+    c.vm.network "private_network", ip: "192.168.44.10"
+    c.vm.network "private_network", ip: INTERNAL_ADDRESSES['proxy'], virtualbox__intnet: "infrataster-integration-test"
+
+    c.vm.provision "chef_solo" do |chef|
+      chef.cookbooks_path = COOKBOOK_PATH
+      chef.add_recipe "apt-mirror"
+      chef.add_recipe "proxy"
+      chef.json = {'addresses' => INTERNAL_ADDRESSES}
+    end
+  end
+
+  config.vm.define :app do |c|
+    c.vm.network "private_network", ip: INTERNAL_ADDRESSES['app'], virtualbox__intnet: "infrataster-integration-test"
+
+    c.vm.provision "chef_solo" do |chef|
+      chef.cookbooks_path = COOKBOOK_PATH
+      chef.add_recipe "apt-mirror"
+      chef.add_recipe "app"
+      chef.json = {'addresses' => INTERNAL_ADDRESSES}
+    end
+  end
+end
