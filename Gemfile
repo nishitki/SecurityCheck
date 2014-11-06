@@ -3,8 +3,12 @@ source 'https://rubygems.org'
 gem 'knife-solo'
 
 gem 'serverspec'
+gem 'rspec-its'
 gem 'rake'
 gem "infrataster"
 #gem "infrataster-plugin-mysql"
+gem 'guard'
+gem 'guard-rspec'
+gem 'ci_reporter'
 gem 'guard'
 gem 'guard-rspec'
