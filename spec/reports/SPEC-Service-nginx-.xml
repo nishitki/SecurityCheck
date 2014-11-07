@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Service &quot;nginx&quot;" tests="2" time="0.038937" failures="0" errors="0" skipped="0" timestamp="2014-11-06T13:37:41+09:00">
-  <testcase name="Service &quot;nginx&quot; should be enabled" time="0.015813">
+<testsuite name="Service &quot;nginx&quot;" tests="2" time="0.039596" failures="0" errors="0" skipped="0" timestamp="2014-11-06T14:16:45+09:00">
+  <testcase name="Service &quot;nginx&quot; should be enabled" time="0.014418">
   </testcase>
-  <testcase name="Service &quot;nginx&quot; should be running" time="0.022874">
+  <testcase name="Service &quot;nginx&quot; should be running" time="0.024926">
   </testcase>
 </testsuite>

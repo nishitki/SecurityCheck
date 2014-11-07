@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="File &quot;/etc/nginx/nginx.conf&quot;" tests="2" time="0.03227" failures="0" errors="0" skipped="0" timestamp="2014-11-06T13:37:41+09:00">
-  <testcase name="File &quot;/etc/nginx/nginx.conf&quot; should be file" time="0.015429">
+<testsuite name="File &quot;/etc/nginx/nginx.conf&quot;" tests="2" time="0.034002" failures="0" errors="0" skipped="0" timestamp="2014-11-06T14:16:45+09:00">
+  <testcase name="File &quot;/etc/nginx/nginx.conf&quot; should be file" time="0.016311">
   </testcase>
-  <testcase name="File &quot;/etc/nginx/nginx.conf&quot; should contain &quot;nginx&quot;" time="0.016595">
+  <testcase name="File &quot;/etc/nginx/nginx.conf&quot; should contain &quot;nginx&quot;" time="0.017461">
   </testcase>
 </testsuite>
