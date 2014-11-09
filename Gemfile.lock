@@ -175,3 +175,4 @@ DEPENDENCIES
   rake
   rspec-its
   serverspec
+  specinfra
