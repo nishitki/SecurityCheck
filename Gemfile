@@ -13,3 +13,5 @@ gem 'ci_reporter'
 gem 'guard'
 gem 'guard-rspec'
 gem 'ci_reporter_rspec'
+gem 'niboshi_json_formatter'
+gem "berkshelf"
