@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "centos65"
-	config.vm.network "public_network", bridge: "en0: Wi-Fi (AirPort)"
+#	config.vm.network "public_network", bridge: "en0: Wi-Fi (AirPort)"
   config.vm.synced_folder '.', '/vagrant', disabled: true
 	config.vm.hostname = "naoya"
   # Disable automatic box update checking. If you disable this, then
