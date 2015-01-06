@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'bundler'
 gem 'knife-solo'
 gem 'serverspec'
 gem 'rspec-its'
