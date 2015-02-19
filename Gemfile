@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bundler'
 gem 'knife-solo'
+gem 'knife-solo_data_bag'
 gem 'serverspec'
 gem 'rspec-its'
 gem 'rake'
